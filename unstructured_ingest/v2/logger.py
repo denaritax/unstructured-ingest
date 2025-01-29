@@ -119,7 +119,7 @@ def make_default_logger(level: int) -> Logger:
     if handler.name not in [h.name for h in logger.handlers]:
         logger.addHandler(handler)
     logger.setLevel(level)
-    remove_root_handlers(logger)
+    # remove_root_handlers(logger)
     return logger
 
 
